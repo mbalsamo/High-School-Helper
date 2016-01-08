@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F626C4E1C0BC1B0008C6793 /* AssignmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F626C4D1C0BC1B0008C6793 /* AssignmentViewController.swift */; };
+		3F626C521C0BC1D1008C6793 /* FinalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F626C511C0BC1D1008C6793 /* FinalViewController.swift */; };
 		3FCC87371C0A692300E41056 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FCC87361C0A692300E41056 /* AppDelegate.swift */; };
 		3FCC87391C0A692300E41056 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FCC87381C0A692300E41056 /* ViewController.swift */; };
 		3FCC873C1C0A692300E41056 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FCC873A1C0A692300E41056 /* Main.storyboard */; };
@@ -34,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3F626C4D1C0BC1B0008C6793 /* AssignmentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AssignmentViewController.swift; sourceTree = "<group>"; };
+		3F626C511C0BC1D1008C6793 /* FinalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FinalViewController.swift; sourceTree = "<group>"; };
 		3FCC87331C0A692300E41056 /* High School Helper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "High School Helper.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FCC87361C0A692300E41056 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3FCC87381C0A692300E41056 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -98,8 +102,10 @@
 			isa = PBXGroup;
 			children = (
 				3FCC87361C0A692300E41056 /* AppDelegate.swift */,
-				3FCC87381C0A692300E41056 /* ViewController.swift */,
 				3FCC873A1C0A692300E41056 /* Main.storyboard */,
+				3FCC87381C0A692300E41056 /* ViewController.swift */,
+				3F626C4D1C0BC1B0008C6793 /* AssignmentViewController.swift */,
+				3F626C511C0BC1D1008C6793 /* FinalViewController.swift */,
 				3FCC873D1C0A692300E41056 /* Assets.xcassets */,
 				3FCC873F1C0A692300E41056 /* LaunchScreen.storyboard */,
 				3FCC87421C0A692300E41056 /* Info.plist */,
@@ -259,8 +265,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F626C521C0BC1D1008C6793 /* FinalViewController.swift in Sources */,
 				3FCC87391C0A692300E41056 /* ViewController.swift in Sources */,
 				3FCC87371C0A692300E41056 /* AppDelegate.swift in Sources */,
+				3F626C4E1C0BC1B0008C6793 /* AssignmentViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -487,6 +495,7 @@
 				3FCC875D1C0A692300E41056 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3FCC875E1C0A692300E41056 /* Build configuration list for PBXNativeTarget "High School HelperTests" */ = {
 			isa = XCConfigurationList;
@@ -495,6 +504,7 @@
 				3FCC87601C0A692300E41056 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3FCC87611C0A692300E41056 /* Build configuration list for PBXNativeTarget "High School HelperUITests" */ = {
 			isa = XCConfigurationList;
@@ -503,6 +513,7 @@
 				3FCC87631C0A692300E41056 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

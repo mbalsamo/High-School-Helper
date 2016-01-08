@@ -1,25 +1,369 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="iw3-K4-hwQ">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalTransitionStyle="crossDissolve" id="BYZ-38-t0r" customClass="ViewController" customModule="High_School_Helper" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="High School Helper" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3e5-bk-IKv">
+                                <rect key="frame" x="28" y="56" width="311" height="61"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="39"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="helloName" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n2U-QS-gZw">
+                                <rect key="frame" x="78" y="151" width="210" height="43"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="34"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <size key="shadowOffset" width="-1" height="-1"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mmy-VE-tTt">
+                                <rect key="frame" x="121" y="314" width="127" height="40"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="18"/>
+                                <size key="titleShadowOffset" width="2.2250738585072014e-308" height="0.0"/>
+                                <state key="normal" title="Finals Calculator">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="sKQ-Sg-1Z0" kind="show" identifier="FinalsCalc" id="lSL-uv-RuV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fdg-zA-Hlg">
+                                <rect key="frame" x="119" y="247" width="131" height="41"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.9939844012260437" green="0.92005664110183716" blue="0.27850884199142456" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="18"/>
+                                <size key="titleShadowOffset" width="2.2250738585072014e-308" height="0.0"/>
+                                <state key="normal" title="Grade Calculator">
+                                    <color key="titleColor" red="0.2666666667" green="0.14901960780000001" blue="0.34509803919999998" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="SC6-es-yx0" kind="show" identifier="AssignmentCalc" id="wu7-jD-kh0"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oqY-QQ-hJS">
+                                <rect key="frame" x="142" y="454" width="97" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZBR-hF-T3H">
+                                <rect key="frame" x="172" y="487" width="37" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="17"/>
+                                <state key="normal" title="Done">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="doneName:" destination="BYZ-38-t0r" eventType="touchUpInside" id="a4y-RF-qdI"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Please enter your name." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E64-OG-5pP">
+                                <rect key="frame" x="71" y="425" width="233" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="18"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" red="0.50196081400000003" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="n2U-QS-gZw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1Ga-he-PiU"/>
+                            <constraint firstItem="mmy-VE-tTt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1Pr-y8-RH7"/>
+                            <constraint firstItem="3e5-bk-IKv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ZW5-e5-Z07"/>
+                            <constraint firstItem="Fdg-zA-Hlg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gob-Sa-eoX"/>
+                            <constraint firstItem="mmy-VE-tTt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="h7s-IK-h70"/>
+                            <constraint firstItem="3e5-bk-IKv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hiK-CY-2xE"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="c66-Kr-ZZr"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="enterName" destination="E64-OG-5pP" id="acW-FT-J3i"/>
+                        <outlet property="finalsCalcButton" destination="mmy-VE-tTt" id="c01-nf-ShT"/>
+                        <outlet property="gradeCalcButton" destination="Fdg-zA-Hlg" id="h56-qL-h1u"/>
+                        <outlet property="helloName" destination="n2U-QS-gZw" id="4gy-F7-yzi"/>
+                        <outlet property="highSchoolHelper" destination="3e5-bk-IKv" id="iXz-v9-KPP"/>
+                        <outlet property="nameDoneButton" destination="ZBR-hF-T3H" id="l56-Ew-kuA"/>
+                        <outlet property="nameTextField" destination="oqY-QQ-hJS" id="jQC-4W-LyV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1167.5" y="343.5"/>
+        </scene>
+        <!--Final View Controller-->
+        <scene sceneID="VNo-mS-ccb">
+            <objects>
+                <viewController modalTransitionStyle="flipHorizontal" id="sKQ-Sg-1Z0" customClass="FinalViewController" customModule="High_School_Helper" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="BCE-Nl-yOh"/>
+                        <viewControllerLayoutGuide type="bottom" id="aMY-Nb-OFH"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="eCm-wd-siT">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="eg 88" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dcV-5i-OSn">
+                                <rect key="frame" x="151" y="174" width="72" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="eg. 20" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2n6-dB-LeY">
+                                <rect key="frame" x="151" y="249" width="72" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="I have a " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UbY-LJ-IXq">
+                                <rect key="frame" x="94" y="178" width="63" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="% in the class" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kow-7s-5uB">
+                                <rect key="frame" x="226" y="178" width="104" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="The final is worth" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ul9-AL-fc4">
+                                <rect key="frame" x="30" y="253" width="132" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tMd-Lj-baG">
+                                <rect key="frame" x="226" y="253" width="20" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mhP-zx-QNj">
+                                <rect key="frame" x="140" y="367" width="75" height="30"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.99604278802871704" green="0.99589461088180542" blue="0.99231070280075073" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="16"/>
+                                <state key="normal" title="Calculate!">
+                                    <color key="titleColor" red="0.0" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <state key="focused" title="Calculate"/>
+                                <connections>
+                                    <action selector="calculateButton:" destination="sKQ-Sg-1Z0" eventType="touchUpInside" id="WVT-wJ-ZSp"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="anwser" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ftc-cl-nCX">
+                                <rect key="frame" x="101" y="416" width="161" height="55"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="comment" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xcG-EG-DZA">
+                                <rect key="frame" x="76" y="464" width="210" height="108"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="% in the class." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uDz-90-cve">
+                                <rect key="frame" x="226" y="104" width="143" height="20"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pxj-0v-Ryu">
+                                <rect key="frame" x="380" y="149" width="61" height="60"/>
+                                <animations/>
+                                <state key="normal" image="Tip"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eUE-CF-lAR">
+                                <rect key="frame" x="299" y="219" width="76" height="77"/>
+                                <animations/>
+                                <state key="normal" image="Tip"/>
+                                <connections>
+                                    <action selector="tip:" destination="sKQ-Sg-1Z0" eventType="touchUpInside" id="ARB-sg-8b9"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="eg 90" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DKZ-7V-Esx">
+                                <rect key="frame" x="151" y="97" width="72" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="I want a " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oam-T1-KdO">
+                                <rect key="frame" x="93" y="99" width="64" height="20"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="dcV-5i-OSn" firstAttribute="centerX" secondItem="eCm-wd-siT" secondAttribute="centerX" id="3GZ-Zw-e66"/>
+                            <constraint firstItem="ftc-cl-nCX" firstAttribute="centerX" secondItem="eCm-wd-siT" secondAttribute="centerX" id="8j5-ej-iIS"/>
+                            <constraint firstItem="2n6-dB-LeY" firstAttribute="centerX" secondItem="eCm-wd-siT" secondAttribute="centerX" id="Qtd-hW-GZQ"/>
+                            <constraint firstItem="mhP-zx-QNj" firstAttribute="centerX" secondItem="eCm-wd-siT" secondAttribute="centerX" id="khW-t4-qI7"/>
+                            <constraint firstItem="DKZ-7V-Esx" firstAttribute="centerX" secondItem="eCm-wd-siT" secondAttribute="centerX" id="tEw-BL-drk"/>
+                            <constraint firstItem="xcG-EG-DZA" firstAttribute="centerX" secondItem="eCm-wd-siT" secondAttribute="centerX" id="tzO-GP-mTN"/>
+                        </constraints>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <connections>
+                        <outlet property="comment" destination="xcG-EG-DZA" id="WWp-zJ-tTo"/>
+                        <outlet property="haveGrade" destination="dcV-5i-OSn" id="8TP-Rx-RGS"/>
+                        <outlet property="reply" destination="ftc-cl-nCX" id="bQk-yX-cMz"/>
+                        <outlet property="wantGrade" destination="DKZ-7V-Esx" id="8Mm-l0-TqN"/>
+                        <outlet property="worthPercent" destination="2n6-dB-LeY" id="iSX-Mc-jDe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wZd-ld-sky" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1611.5" y="735.5"/>
+        </scene>
+        <!--Assignment View Controller-->
+        <scene sceneID="g8x-iZ-lg7">
+            <objects>
+                <viewController modalTransitionStyle="flipHorizontal" id="SC6-es-yx0" customClass="AssignmentViewController" customModule="High_School_Helper" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="eUV-Kj-Mc9"/>
+                        <viewControllerLayoutGuide type="bottom" id="aK0-vO-cl2"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fNh-LU-Aft">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="eg. 19" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zEm-he-ZNS">
+                                <rect key="frame" x="110" y="138" width="154" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Your Grade" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R9P-Og-cn5">
+                                <rect key="frame" x="144" y="109" width="86" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="eg. 24" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HWT-0U-2sR">
+                                <rect key="frame" x="110" y="236" width="154" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Points Possible" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RnH-Xs-vOS">
+                                <rect key="frame" x="129" y="207" width="116" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z9m-gB-g04">
+                                <rect key="frame" x="153" y="292" width="77" height="30"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.99604278802871704" green="0.99589461088180542" blue="0.99231070280075073" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="17"/>
+                                <state key="normal" title="Calculate!">
+                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="CalculateButton:" destination="SC6-es-yx0" eventType="touchUpInside" id="KC5-zG-JOt"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="f9j-Nu-fU0">
+                                <rect key="frame" x="20" y="429" width="193" height="218"/>
+                                <animations/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lpf-iT-FRe">
+                                <rect key="frame" x="275" y="55" width="100" height="45"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="15"/>
+                                <state key="normal" title="Previous Grades"/>
+                                <connections>
+                                    <action selector="infoButton:" destination="SC6-es-yx0" eventType="touchUpInside" id="4sv-W7-Dxj"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" editable="NO" text="feedback" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="t7B-rN-1dH">
+                                <rect key="frame" x="67" y="330" width="240" height="96"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.9939844012260437" green="0.92005664110183716" blue="0.27850884199142456" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" red="0.9939844012260437" green="0.92005664110183716" blue="0.27850884199142456" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="R9P-Og-cn5" firstAttribute="centerX" secondItem="fNh-LU-Aft" secondAttribute="centerX" id="06o-Uq-GTI"/>
+                            <constraint firstItem="t7B-rN-1dH" firstAttribute="centerX" secondItem="fNh-LU-Aft" secondAttribute="centerX" id="5MS-7o-cKz"/>
+                            <constraint firstItem="Z9m-gB-g04" firstAttribute="centerX" secondItem="fNh-LU-Aft" secondAttribute="centerX" id="Js6-DP-b8R"/>
+                            <constraint firstItem="RnH-Xs-vOS" firstAttribute="centerX" secondItem="fNh-LU-Aft" secondAttribute="centerX" id="OOW-aD-w8I"/>
+                            <constraint firstItem="zEm-he-ZNS" firstAttribute="centerX" secondItem="fNh-LU-Aft" secondAttribute="centerX" id="YXZ-IA-Zba"/>
+                            <constraint firstItem="HWT-0U-2sR" firstAttribute="centerX" secondItem="fNh-LU-Aft" secondAttribute="centerX" id="aWC-os-Mbl"/>
+                        </constraints>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <connections>
+                        <outlet property="feedback" destination="t7B-rN-1dH" id="Lnr-SN-xvy"/>
+                        <outlet property="imageView" destination="f9j-Nu-fU0" id="fJM-9g-IuC"/>
+                        <outlet property="pointsPossible" destination="HWT-0U-2sR" id="HDK-TH-5uA"/>
+                        <outlet property="yourGrade" destination="zEm-he-ZNS" id="pDS-oz-FVl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Z8n-Bt-10m" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1611.5" y="-21.5"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ARm-lA-ciA">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="iw3-K4-hwQ" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="UpK-0N-quI">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="ARy-sb-A7l"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XGA-O3-5nV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="690.5" y="343.5"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Tip" width="325" height="315"/>
+    </resources>
 </document>
